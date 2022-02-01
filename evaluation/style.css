@@ -31,6 +31,7 @@ section {
 }
 
 table {
+  background-color: var(--light-color);
   width: 100%;
   border-spacing: 0;
   border: 1px solid var(--dark-border);
@@ -48,25 +49,49 @@ th {
   border-bottom: 1px solid var(--dark-border);
 }
 
-
+footer {
+  display: none;
+}
 
 article {
   margin-bottom: 50px;
 }
 
+@page {
+  size: auto;
+  margin: 10%;
+}
+
 /* Media */
 @media print {
   html {
-    font-size: 200%;
+    font-size: 170%;
+  }
+
+  body
+  {
+    margin: 25mm 25mm 25mm 25mm;
   }
 
   header {
     page-break-after: always;
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
   main {
     padding: 100px;
+  }
+
+  article {
+    page-break-inside: avoid;
+    margin-top: 5rem;
+  }
+
+  footer {
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
   }
 }
 
@@ -99,8 +124,25 @@ article {
 /* Decorators */
 .type-perceivable {
   color: var(--danger-color);
+  font-weight: bold;
 }
 
 .type-operable {
   color: var(--warning-color);
+  font-weight: bold;
+}
+
+.ind-comp {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.remark {
+  padding: 10px;
+  background-color: var(--light-contrast-color);
+  border-bottom: var(--light-border) solid 1px;
 }
