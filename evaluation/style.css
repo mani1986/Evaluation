@@ -31,6 +31,7 @@ section {
 }
 
 table {
+  background-color: var(--light-color);
   width: 100%;
   border-spacing: 0;
   border: 1px solid var(--dark-border);
@@ -99,8 +100,25 @@ article {
 /* Decorators */
 .type-acc {
   color: var(--danger-color);
+  font-weight: bold;
 }
 
 .type-usa {
   color: var(--warning-color);
+  font-weight: bold;
+}
+
+.ind-comp {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.remark {
+  padding: 10px;
+  background-color: var(--light-contrast-color);
+  border-bottom: var(--light-border) solid 1px;
 }
