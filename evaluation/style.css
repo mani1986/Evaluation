@@ -97,10 +97,10 @@ article {
 
 
 /* Decorators */
-.type-acc {
+.type-perceivable {
   color: var(--danger-color);
 }
 
-.type-usa {
+.type-operable {
   color: var(--warning-color);
 }
