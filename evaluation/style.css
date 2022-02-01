@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+  --danger-color: #FF4136;
+  --warning-color: #FF851B;
+  --success-color: #3D9970;
+  --passive-color: #0074D9;
+  --light-border: #d0d4d9;
+  --dark-border: #5c504f;
+  --dark-color: #000000;
+  --dark-blue-color: #000033;
+  --light-color: #f6f9fc;
+  --medium-color: #DDDDDD;
+  --light-contrast-color: lightgoldenrodyellow;
+}
+
+/* Elements */
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  padding: 50px;
+  max-height: 1080px;
+}
+
+section {
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid var(--dark-border);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 90%;
+}
+
+table td, table th {
+  text-align: left;
+  padding: 9px 0;
+}
+
+th {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+
+
+article {
+  margin-bottom: 50px;
+}
+
+/* Media */
+@media print {
+  html {
+    font-size: 200%;
+  }
+
+  header {
+    page-break-after: always;
+    margin-top: 30%;
+  }
+
+  main {
+    padding: 100px;
+  }
+}
+
+/* Custom */
+#appendix-b th:first-child {
+  width: 4vw;
+}
+
+#appendix-b th:nth-child(2) {
+  width: 15vw;
+}
+
+#appendix-b th:nth-child(3) {
+  width: 12vw;
+}
+
+#appendix-a th:first-child {
+  width: 4vw;
+}
+
+#appendix-a th:nth-child(2) {
+  width: 15vw;
+}
+
+#appendix-a th:nth-child(3) {
+  width: 60vw;
+}
+
+
+/* Decorators */
+.type-acc {
+  color: var(--danger-color);
+}
+
+.type-usa {
+  color: var(--warning-color);
+}
